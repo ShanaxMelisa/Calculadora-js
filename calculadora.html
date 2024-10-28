@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Configura la vista para que se adapte al ancho de cada dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora Javascript</h1>
+    <!--Crea un contenedor "div" y con esa clase se puede añadir un css especifico-->
+    <div class="calculadora">
+        <!--identifica la pantalla y el readonly hace que sea de lectura viendo como se actualiza-->
+        <input type="text" id="pantalla" readonly>
+        <br>
+        <!--Crea un boton, el value se refleja lo que ve el usuaro, al hacer click llama a una funcion de java con el valor clickeado-->
+        <input type="button" value="1" onclick="agregar('1')" >
+        <input type="button" value="2" onclick="agregar('2')" >
+        <input type="button" value="3" onclick="agregar('3')" >
+        <input type="button" value="+" onclick="agregar('+')" >
+        <br>
+        <input type="button" value="4" onclick="agregar('4')" >
+        <input type="button" value="5" onclick="agregar('5')" >
+        <input type="button" value="6" onclick="agregar('6')" >
+        <input type="button" value="-" onclick="agregar('-')" >
+        <br>
+        <input type="button" value="7" onclick="agregar('7')" >
+        <input type="button" value="8" onclick="agregar('8')" >
+        <input type="button" value="9" onclick="agregar('9')" >
+        <input type="button" value="*" onclick="agregar('*')" >
+        <br>
+        <input type="button" value="0" onclick="agregar('0')" >
+        <input type="button" value="." onclick="agregar('.')" >
+        <input type="button" value="/" onclick="agregar('/')" >
+        <input type="button" value="=" onclick="resultado()" >
+        <br>
+        <input type="button" value="C" onclick="borrar()" >
+        <input type="button" value="<-" onclick="eliminar()" >
+    </div>
+<!--Enlaza al archivo script-->
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
